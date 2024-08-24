@@ -1,0 +1,33 @@
+.feedbackList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feedbackList:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.feedbackList li {
+    margin: 0;
+    padding: 0;
+}
+
+.feedbackText {
+    text-align: left;
+}
+
+.good {
+    composes: feedbackText;
+    color: rgb(78, 196, 78);
+}
+
+.neutral {
+    composes: feedbackText;
+    color: rgb(197, 197, 56);
+}
+
+.bad {
+    composes: feedbackText;
+    color: rgb(228, 59, 59);
+}

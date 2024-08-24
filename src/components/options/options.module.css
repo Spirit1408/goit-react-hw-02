@@ -1,0 +1,47 @@
+.optWrapper {
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.optList {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.optBtn {
+    min-width: 150px;
+}
+
+.good,
+.neutral,
+.bad,
+.reset {
+    composes: optBtn;
+    transition: 250ms ease;
+}
+
+.good:hover {
+    color: rgb(78, 196, 78);
+    border-color: rgb(78, 196, 78);
+}
+
+.neutral:hover {
+    color: rgb(197, 197, 56);
+    border-color: rgb(197, 197, 56);
+}
+
+.bad:hover {
+    color: rgb(228, 59, 59);
+    border-color: rgb(228, 59, 59);
+}
+
+.reset {
+    min-width: 80%;
+}
+
+.reset:hover {
+    color: #000000;
+    background-color: rgb(228, 59, 59);
+}
